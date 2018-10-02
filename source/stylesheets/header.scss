@@ -1,0 +1,65 @@
+nav {
+	padding-top: 1em;
+	color: white;
+	position: relative;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+ display: block;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+.dropdown {
+	height: 1em;
+	overflow: visible;
+}
+
+.dropdown__header {
+	background-color: red;
+	display: block;
+	width: 100%;
+	color: white;
+	height: 5em;
+	padding-top: 2.5em;
+}
+
+.dropdown__menu {
+	background-color: orange;
+	display: none;
+	overflow: visible;
+	margin: auto;
+	width: 20em;
+}
+
+.dropdown:hover > .dropdown__menu {
+	display: block;
+}
+
+.dropdown__menu li {
+	padding: 0;
+	padding-top: 2em;
+}
+
+.dropdown__menu a {
+	text-decoration: none;
+	padding: 2em;
+	padding-top: 2em;
+}
+
+.dropdown__menu a:hover {
+	background-color: blue;
+	width: 20em;
+	color: white;
+}
+
+.card {
+	margin-top: 20vh;
+	z-index: -1000; 
+}
