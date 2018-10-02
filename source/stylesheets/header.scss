@@ -1,5 +1,7 @@
 details > summary {
 	list-style: none;
+	padding: 1.25em;
+	color: white;
 }
 
 details > summary::-webkit-details-marker {
@@ -19,14 +21,26 @@ nav {
 	position: relative;
 }
 
-ul {
+details ul {
 	padding: 0;
+	margin: 0;
 }
 
 li {
  display: block;
 }
 
+details li {
+	background-color: blue;
+	border-bottom: 1px solid black;
+}
+
+details a {
+	display: block;
+	padding: 1.25em;
+	color: white;
+	text-decoration: none; 
+}
 
 .card {
 	margin-top: 20vh;
