@@ -1,19 +1,17 @@
 details > summary {
-	list-style: none;
-	padding: 1.25em;
+	padding: 1.05em;
 	color: white;
-}
-
-details > summary::-webkit-details-marker {
-  display: none;
+	font-size: 1.8em;
 }
 
 details {
-	background: blue;
+	background: #ed3e44;
+	box-shadow: 0.5px 0.5px 25px 0.5px grey;  
 }
 
 details[open] {
-	background: green;
+	box-shadow: 0.5px 0.5px 25px 0.5px grey;  
+
 }
 
 nav {
@@ -31,10 +29,13 @@ li {
 }
 
 details li {
-	background-color: blue;
-	border-bottom: 1px solid black;
+	background-color: #4C95C7;
+	border-bottom: 1px solid #65FFFF;
 }
 
+details li:hover {
+	background-color: #657EA8;
+}
 details a {
 	display: block;
 	padding: 1.25em;
@@ -45,4 +46,9 @@ details a {
 .card {
 	margin-top: 20vh;
 	z-index: -1000; 
+}
+
+summary:hover {
+	cursor: pointer;
+	background-color: #F0AA41;
 }
