@@ -1,0 +1,35 @@
+.card {
+	z-index: -1000; 
+}
+
+.card {
+	background-color: #F0AA41;
+	width: 28vw;
+	padding: 1rem;
+	text-align: center;
+	border-radius: 20px;
+	height:40vw;
+	margin: 0 auto;
+	margin-top: 10vh;
+	box-shadow: 10px 10px 0.5px 0.5px #ed3e44;;
+}
+
+.card__category {
+	box-sizing: border-box;
+	background-color: #4C95C7;
+	width: 100%;
+	text-align: center;
+	color: white;
+	border-radius: 20px;
+	padding: 1rem;
+	margin: 0 auto;
+	border: 1px solid #65FFFF;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+p.card__prompt {
+	margin-top: 25%;
+	color: white;
+	font-size: 1.3rem;
+}
