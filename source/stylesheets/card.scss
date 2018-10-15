@@ -7,6 +7,12 @@
   height: $card-height;
   margin: $base-vh-spacing auto 0;
   box-shadow: $bkg-card-fill;
+  transition: $base-transition;
+}
+
+.card--transform {
+  transform: rotateY(360deg);
+
 }
 
 .card__category {
@@ -57,7 +63,7 @@ p.card__prompt {
     top: 0;
     transform-origin: left center;
     transform: scale(0,1);
-    transition: all 0.2s linear 0s;
+    transition: $base-transition;
     width: 30px;
   }
 
@@ -72,8 +78,5 @@ p.card__prompt {
       transform: scale(1,1);
     }
   }
-
-  &:active {
-    transform: rotateY(180deg);
-  }
+  
 }

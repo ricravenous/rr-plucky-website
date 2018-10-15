@@ -69,6 +69,9 @@ $bkg-second-card-fill: 10px 10px 0.5px 0.5px $secondary-red;
 $card-width: $base-vh-spacing * 3;
 $card-height: $base-vh-spacing * 4.5;
 
+//Transitions
+$base-transition: all 0.2s linear 0s;
+
 // z-indexes
 $hidden-element-z-index: -1;
 $base-z-index: 0;
