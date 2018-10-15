@@ -42,8 +42,7 @@ p.card__prompt {
   transition: all 0.2s linear 0s;
   overflow: hidden;
 
-
-    &:before {
+  &:before {
     content: "\2191";
     color: #F0AA41;
     display: inline-flex;
@@ -69,8 +68,12 @@ p.card__prompt {
     cursor: pointer;
 
     &:before {
-        transform: scale(1,1);
-        text-indent: 0;
+      transform: scale(1,1);
+      text-indent: 0;
     }
+  }
+
+  &:active {
+    transform: rotateY(180deg);
   }
 }
