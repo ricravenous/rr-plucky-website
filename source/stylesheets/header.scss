@@ -1,17 +1,16 @@
 details > summary {
   padding: 1.05em;
   color: $white;
-  font-size: 1.8em;
+  font-size: $base__font-size;
 }
 
 details {
-  background: #ed3e44;
+  background: $red;
   box-shadow: $base-box-shadow;  
 }
 
 details[open] {
   box-shadow: $base-box-shadow;  
-
 }
 
 nav {
@@ -29,22 +28,22 @@ li {
 }
 
 details li {
-  background-color: #4C95C7;
-  border-bottom: 1px solid #65FFFF;
+  background-color: $blue-fill;
+  border-bottom: $base-border;
 }
 
 details li:hover {
-  background-color: #657EA8;
+  background-color: $dark-purple;
 }
 
 details a {
   display: block;
   padding: 1.25em;
-  color: white;
+  color: $white;
   text-decoration: none; 
 }
 
 summary:hover {
   cursor: pointer;
-  background-color: #F0AA41;
+  background-color: $yellow;
 }

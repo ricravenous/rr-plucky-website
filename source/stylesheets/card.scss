@@ -21,7 +21,6 @@
   padding: 1em;
   text-align: center;
   width: 100%;
-  font-weight: $medium-font-weight;
 }
 
 p.card__prompt {
@@ -32,10 +31,10 @@ p.card__prompt {
 }
 
 .card__refresh-button {
-  background-color: #4C96C7;
-  border-radius: 20px;
-  border: 2px solid #65FFFF;
-  color: white;
+  background-color: $blue-fill;
+  border-radius: $base-border-radius;
+  border: $base-border;
+  color: $white;
   overflow: hidden;
   padding: .75rem 2rem;
   position: relative;
@@ -46,9 +45,11 @@ p.card__prompt {
     align-items: center;
     background-color: rgba( #000,0.3);
     border-radius: 0 50% 50% 0;
-    color: #F0AA41;
+    color: $yellow;
     content: "\2191";
     display: inline-flex;
+    font-size: $base__font-size;
+    font-weight: $h1-font-weight;
     height: 100%;
     justify-content: center;
     left: 0px;
@@ -61,15 +62,15 @@ p.card__prompt {
   }
 
   &:hover {
-    background-color: #67528C;
-    color: #FFF;
+    background-color: $dark-purple;
+    color: $white;
     cursor: pointer;
     font-weight: bolder;
     text-indent: 30px;
 
     &:before {
-        text-indent: 0;
-        transform: scale(1,1);
+      text-indent: 0;
+      transform: scale(1,1);
     }
   }
 
