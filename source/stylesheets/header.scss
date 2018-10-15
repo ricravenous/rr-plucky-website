@@ -1,6 +1,6 @@
 details > summary {
   padding: 1.05em;
-  color: white;
+  color: $white;
   font-size: 1.8em;
 }
 
@@ -44,7 +44,8 @@ details a {
   text-decoration: none; 
 }
 
-  summary:hover {
+summary:hover {
   cursor: pointer;
   background-color: #F0AA41;
-  }
+
+}
