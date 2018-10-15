@@ -6,16 +6,16 @@ details > summary {
 
 details {
   background: #ed3e44;
-  box-shadow: 0.5px 0.5px 25px 0.5px grey;  
+  box-shadow: $base-box-shadow;  
   }
 
 details[open] {
-  box-shadow: 0.5px 0.5px 25px 0.5px grey;  
+  box-shadow: $base-box-shadow;  
 
 }
 
 nav {
-  color: white;
+  color: $white;
   position: relative;
 }
 
