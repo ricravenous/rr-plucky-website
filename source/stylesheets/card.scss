@@ -1,35 +1,36 @@
 .card {
-  z-index: -1000; 
+  z-index: -1000;
 }
 
 .card {
   background-color: $yellow;
-  width: 28vw;
-  padding: 1rem;
+  width: $card-width;
+  padding: 1em;
   text-align: center;
-  border-radius: 20px;
-  height:40vw;
+  border-radius: $base-border-radius;
+  height: $card-height;
   margin: 0 auto;
   margin-top: 10vh;
   box-shadow: $bkg-card-fill;
 }
 
 .card__category {
-  box-sizing: border-box;
   background-color: $blue-fill;
-  width: 100%;
-  text-align: center;
+  border-radius: $base-border-radius;
+  border: $base-border;
+  box-sizing: border-box;
   color: white;
-  border-radius: 20px;
-  padding: 1rem;
+  font-size: $h1-font-size;
+  font-weight: $h1-font-weight;
   margin: 0 auto;
-  border: 1px solid $base-border-color;
-  font-size: 1.5em;
-  font-weight: bold;
+  padding: 1em;
+  text-align: center;
+  width: 100%;
 }
 
 p.card__prompt {
   margin-top: 25%;
   color: white;
-  font-size: 1.3rem;
+  font-size: $base__font-size;
+  line-height: $base-line-height;
 }
