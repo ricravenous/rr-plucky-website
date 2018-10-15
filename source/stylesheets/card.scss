@@ -66,10 +66,9 @@ p.card__prompt {
     color: $white;
     cursor: pointer;
     font-weight: bolder;
-    text-indent: 30px;
+    display: inline-flex;
 
     &:before {
-      text-indent: 0;
       transform: scale(1,1);
     }
   }
