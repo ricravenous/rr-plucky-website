@@ -1,3 +1,9 @@
+// Bourbon settings
+$bourbon: (
+  "global-font-file-formats": ("woff2", "woff"),
+  "rails-asset-pipeline": true,
+);
+
 //Typography
 $monospace-font-stack: "Consolas", "Courier New", "Monaco", monospace;
 $base-font-family: "Calibre", $monospace-font-stack;
