@@ -4,7 +4,7 @@ $bourbon: (
   "rails-asset-pipeline": true,
 );
 
-//Typography
+// Typography
 $monospace-font-stack: "Consolas", "Courier New", "Monaco", monospace;
 $base-font-family: "Calibre", $monospace-font-stack;
 
@@ -25,7 +25,7 @@ $footer-font-size: 0.8em;
 $base-line-height: 1.7;
 $heading-line-height: 1.25;
 
-//Spacing
+// Spacing
 $base-vh-spacing: 10vh;
 
 // Breakpoints
@@ -36,9 +36,9 @@ $xlarge-breakpoint: 1600px;
 
 // Colors
 $black: #333;
-$dark-purple: #647EA8;
+$dark-purple: #67528C;
 $grey: #808080;
-$red: #D93D3D; 
+$red: #ed3e44; 
 $white: #fff;
 $yellow: #FFD940;
 
@@ -47,12 +47,12 @@ $blue-fill: #4C96C7;
 $light-purple: #D94B7B;
 $secondary-red: #A62E2E;
 
-//Font Colors
+// Font Colors
 $base-font-color: $white;
 $accent-font-color: $red;
 $hover-color: $dark-purple;
 
-//Borders & Shadows
+// Borders & Shadows
 $base-border-color: #65FFFF;
 $base-border: 1px solid $base-border-color;
 $base-border-radius: 20px;
@@ -61,11 +61,11 @@ $base-box-shadow: 0.5px 0.5px 25px 0.5px $grey;
 // Background Colors
 $base-background-color: $dark-purple;
 
-//Card Layers
+// Card Layers
 $bkg-card-fill: 10px 10px 0.5px 0.5px $red;
 $bkg-second-card-fill: 10px 10px 0.5px 0.5px $secondary-red;
 
-//Card Size
+// Card Size
 $card-width: $base-vh-spacing * 3;
 $card-height: $base-vh-spacing * 4.5;
 

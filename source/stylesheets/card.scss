@@ -1,8 +1,4 @@
 .card {
-  z-index: -1000;
-}
-
-.card {
   background-color: $yellow;
   width: $card-width;
   padding: 1em;
@@ -18,7 +14,7 @@
   border-radius: $base-border-radius;
   border: $base-border;
   box-sizing: border-box;
-  color: white;
+  color: $white;
   font-size: $h1-font-size;
   font-weight: $h1-font-weight;
   margin: 0 auto;
@@ -32,4 +28,52 @@ p.card__prompt {
   color: $white;
   font-size: $base__font-size;
   line-height: $base-line-height;
+}
+
+.card__refresh-button {
+  background-color: $blue-fill;
+  border-radius: $base-border-radius;
+  border: $base-border;
+  color: $white;
+  overflow: hidden;
+  padding: .75rem 2rem;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.2s linear 0s;
+
+  &:before {
+    align-items: center;
+    background-color: rgba( #000,0.3);
+    border-radius: 0 50% 50% 0;
+    color: $yellow;
+    content: "\2191";
+    display: inline-flex;
+    font-size: $base__font-size;
+    font-weight: $h1-font-weight;
+    height: 100%;
+    justify-content: center;
+    left: 0px;
+    position: absolute;
+    top: 0;
+    transform-origin: left center;
+    transform: scale(0,1);
+    transition: all 0.2s linear 0s;
+    width: 30px;
+  }
+
+  &:hover {
+    background-color: $dark-purple;
+    color: $white;
+    cursor: pointer;
+    font-weight: bolder;
+    display: inline-flex;
+
+    &:before {
+      transform: scale(1,1);
+    }
+  }
+
+  &:active {
+    transform: rotateY(180deg);
+  }
 }
