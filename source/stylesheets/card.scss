@@ -41,7 +41,6 @@ p.card__prompt {
   position: relative;
   text-decoration: none;
   transition: all 0.2s linear 0s;
-}
 
   &:before {
     align-items: center;
@@ -77,4 +76,4 @@ p.card__prompt {
   &:active {
     transform: rotateY(180deg);
   }
-
+}
