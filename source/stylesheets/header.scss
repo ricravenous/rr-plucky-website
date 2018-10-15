@@ -7,7 +7,7 @@ details > summary {
 details {
   background: #ed3e44;
   box-shadow: $base-box-shadow;  
-  }
+}
 
 details[open] {
   box-shadow: $base-box-shadow;  
@@ -35,7 +35,7 @@ details li {
 
 details li:hover {
   background-color: #657EA8;
-  }
+}
 
 details a {
   display: block;
@@ -47,5 +47,4 @@ details a {
 summary:hover {
   cursor: pointer;
   background-color: #F0AA41;
-
 }
