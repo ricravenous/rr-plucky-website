@@ -2,25 +2,54 @@
 $monospace-font-stack: "Consolas", "Courier New", "Monaco", monospace;
 $base-font-family: "Calibre", $monospace-font-stack;
 
+// Font Weights
+$h1-font-weight: 600;
+$base-font-weight: 400;
+$light-font-weight: 300;
+$normal-font-weight: 400;
+$medium-font-weight: 500;
+
 // Font Sizes
-$base__line-height: 1.4;
 $base__font-size: 1.2em;
+$h1-font-size: 1.6em;
+$title-font-size: 3.5em;
+$footer-font-size: 0.8em;
+
+// Line height
+$base-line-height: 1.7;
+$heading-line-height: 1.25;
+
+//Spacing
+$base-vh-spacing: 10vh;
+
+// Breakpoints
+$small-breakpoint: 480px;
+$medium-breakpoint: 890px;
+$large-breakpoint: 1200px;
+$xlarge-breakpoint: 1600px;
 
 // Colors
-$yellow: #FFD940;
+$black: #333;
 $dark-purple: #647EA8;
+$grey: #808080;
 $red: #D93D3D; 
 $white: #fff;
-$black: #333;
-$grey: #808080;
+$yellow: #FFD940;
 
 // Accent Colors
 $blue-fill: #4C96C7;
-$secondary-red: #A62E2E;
 $light-purple: #D94B7B;
+$secondary-red: #A62E2E;
+
+//Font Colors
+$base-font-color: $white;
+$accent-font-color: $red;
+$hover-color: $dark-purple;
 
 //Borders & Shadows
 $base-border-color: #65FFFF;
+$base-border: 1px solid $base-border-color;
+$base-border-radius: 20px;
 $base-box-shadow: 0.5px 0.5px 25px 0.5px $grey;  
 
 // Background Colors
@@ -28,7 +57,13 @@ $base-background-color: $dark-purple;
 
 //Card Layers
 $bkg-card-fill: 10px 10px 0.5px 0.5px $red;
+$bkg-second-card-fill: 10px 10px 0.5px 0.5px $secondary-red;
 
+//Card Size
+$card-width: $base-vh-spacing * 3;
+$card-height: $base-vh-spacing * 4.5;
 
-
-
+// z-indexes
+$hidden-element-z-index: -1;
+$base-z-index: 0;
+$above-z-index: 1;
