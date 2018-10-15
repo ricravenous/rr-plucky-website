@@ -1,68 +1,68 @@
 $_topic-size: 2rem;
 
 .topics-nav {
-margin-left: 2rem;
+  margin-left: 2rem;
 }
 
 .topics-nav__toggle {
-	height: $_topic-size;
-	width: $_topic-size;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: #ed3e44;
-	border-radius: 50%;
-	box-shadow: 0.5px 0.5px 25px 0.5px grey;  
-	z-index: 2;
+  height: $_topic-size;
+  width: $_topic-size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ed3e44;
+  border-radius: 50%;
+  box-shadow: 0.5px 0.5px 25px 0.5px grey;  
+  z-index: 2;
 
 
-	&::-webkit-details-marker {
-		display: none;
-	}
+  &::-webkit-details-marker {
+    display: none;
+  }
 
-	&:hover {
-		cursor: pointer;
-		background-color: #F0AA41;
-	}
+  &:hover {
+    background-color: #F0AA41;
+    cursor: pointer;
+  }
 
-	.topics-nav[open] & {
-		background-color: #F0AA41;
-	} 
+  .topics-nav[open] & {
+  	background-color: #F0AA41;
+  } 
 }
 
 .topics-nav__menu {
-	list-style-type: none;
-	position: absolute;
-	left: 0;
-	right: 0;
-	right: 4%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 1%;
-	width: 26%;
+  list-style-type: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  position: absolute;
+  left: 0;
+  right: 4%;
+  width: 26%;
 
 }
 
 .topics-nav__icon {
-	fill: #fff;
-	width: 1rem;
-	height: 1rem;
+  fill: #fff;
+  height: 1rem;
+  width: 1rem;
 }
 
 .topics-nav__link {
-	background-color: #4C95C7;
-	border-bottom: 1px solid #65FFFF;
-	display: block;
-	padding: 1.25em;
-	color: white;
-	text-decoration: none; 
+  background-color: #4C95C7;
+  border-bottom: 1px solid #65FFFF;
+  color: white;
+  display: block;
+  padding: 1.25em;
+  text-decoration: none; 
 
-	&:hover {
-		background-color: #657EA8;
-	}	
+  &:hover {
+    background-color: #657EA8;
+  }
 
-	.topics-nav__item:last-child & {
-		border-bottom-right-radius: .7rem;
-		border-bottom-left-radius: .7rem;
-	}
+  .topics-nav__item:last-child & {
+    border-bottom-left-radius: .7rem;
+    border-bottom-right-radius: .7rem;
+  }
+
 }
