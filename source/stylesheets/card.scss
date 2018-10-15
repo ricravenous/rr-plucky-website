@@ -1,8 +1,4 @@
 .card {
-  z-index: -1000;
-}
-
-.card {
   background-color: $yellow;
   width: $card-width;
   padding: 1em;
@@ -18,13 +14,14 @@
   border-radius: $base-border-radius;
   border: $base-border;
   box-sizing: border-box;
-  color: white;
+  color: $white;
   font-size: $h1-font-size;
   font-weight: $h1-font-weight;
   margin: 0 auto;
   padding: 1em;
   text-align: center;
   width: 100%;
+  font-weight: $medium-font-weight;
 }
 
 p.card__prompt {
@@ -32,4 +29,48 @@ p.card__prompt {
   color: $white;
   font-size: $base__font-size;
   line-height: $base-line-height;
+}
+
+.card__refresh-button {
+  text-decoration: none;
+  background-color: #4C96C7;
+  border-radius: 20px;
+  border: 2px solid #65FFFF;
+  color: white;
+  padding: .75rem 2rem;
+  position: relative;
+  transition: all 0.2s linear 0s;
+  overflow: hidden;
+
+
+    &:before {
+    content: "\2191";
+    color: #F0AA41;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    height: 100%;
+    width: 30px;
+    background-color: rgba( #000,0.3);
+    border-radius: 0 50% 50% 0;
+    transform: scale(0,1);
+    transform-origin: left center;
+    transition: all 0.2s linear 0s;
+  }
+
+  &:hover {
+    color: #FFF;
+    text-indent: 30px;
+    background-color: #67528C;
+    font-weight: bolder;
+    cursor: pointer;
+
+    &:before {
+        transform: scale(1,1);
+        text-indent: 0;
+    }
+  }
 }
