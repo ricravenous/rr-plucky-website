@@ -10,26 +10,23 @@
   position: absolute;
   left: 50%;
   margin-left: -$card-width / 1.77;
-  top: 7.75vh;
-  z-index: -100;
+  top: $base-vh-spacing - 2.25;
+
  }
 
 .card--transform {
   transform: rotateY(180deg);
 }
 
-.card--layers {
+.card.card--layers {
   background-color: $red;
-  border-radius: $base-border-radius;
   box-shadow: $bkg-card-fill;
   height: $card-height;
-  padding: 1em;
-  position: absolute;
   width: $card-width;
-  z-index: -200;
+  z-index: $behind-z-index;
   left: 50%;
   margin-left: -$card-width / 1.9;
-  top: $base-vh-spacing * 1.9;
+  top: $base-vh-spacing - 1;
 }
 
 .card__category {
@@ -104,7 +101,7 @@ p.card__prompt {
 
 }
 
-p.credits {
+.credits {
   text-align: right;
   font-weight: $light-font-weight;
   font-size: $footer-font-size;

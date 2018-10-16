@@ -73,6 +73,7 @@ $card-height: $base-vh-spacing * 5;
 $base-transition: all 0.3s linear 0s;
 
 // z-indexes
-$hidden-element-z-index: -1;
+$hidden-element-z-index: -2;
+$behind-z-index: -1;
 $base-z-index: 0;
 $above-z-index: 1;
