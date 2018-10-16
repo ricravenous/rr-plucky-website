@@ -2,7 +2,6 @@
   background-color: $yellow;
   width: $card-width;
   padding: 1em;
-  text-align: center;
   border-radius: $base-border-radius;
   height: $card-height;
   margin: $base-vh-spacing auto 0;
@@ -14,6 +13,12 @@
 
  }
 
+.card__header {
+  justify-content: center;
+  padding-top: 0;
+  margin: 0 auto;
+}
+
 .card--transform {
   transform: rotateY(360deg);
 }
@@ -22,25 +27,11 @@
   background-color: $red;
   box-shadow: $bkg-card-fill;
   height: $card-height;
-  width: $card-width;
-  z-index: $behind-z-index;
   left: 50%;
   margin-left: -$card-width / 1.9;
   top: $base-vh-spacing - 1;
-}
-
-.card__category {
-  background-color: $blue-fill;
-  border-radius: $base-border-radius;
-  border: $base-border;
-  box-sizing: border-box;
-  color: $white;
-  font-size: $h1-font-size;
-  font-weight: $h1-font-weight;
-  margin: 0 auto;
-  padding: 1em;
-  text-align: center;
-  width: 100%;
+  width: $card-width;
+  z-index: $behind-z-index;
 }
 
 p.card__prompt {
@@ -98,7 +89,6 @@ p.card__prompt {
       transform: scale(1,1);
     }
   }
-
 }
 
 .credits {

@@ -1,49 +1,75 @@
-details > summary {
-  padding: 1.05em;
-  color: $white;
-  font-size: $base__font-size;
-}
-
-details {
-  background: $red;
-  box-shadow: $base-box-shadow;  
-}
-
-details[open] {
-  box-shadow: $base-box-shadow;  
-}
-
-nav {
-  color: $white;
+.topics-nav {
   position: relative;
-}
-
-details ul {
   padding: 0;
-  margin: 0;
 }
 
-li {
+.topics-nav__toggle {
+  background-color: $blue-fill;
+  border-radius: $base-border-radius;
+  border: $base-border;
+  box-sizing: border-box;
+  color: $white;
+  display: inline-flex;
+  font-size: $h1-font-size;
+  font-weight: $h1-font-weight;
+  margin: 0 auto;;
+  padding: .5rem;
+  width: $card-width;
+  align-items: center;
+  z-index: $base-z-index;
+
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  &:hover {
+    background-color: $dark-purple;
+    cursor: pointer;
+  }
+
+  .topics-nav[open] & {
+  	background-color: $dark-purple;
+  } 
+}
+
+.topics-nav__menu {
+  list-style-type: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 0;
+  padding: 0;
+  z-index: $above-z-index;
+}
+
+.topics-nav__icon {
+  background: $red;
+  border-radius: 50%;
+  box-shadow: $base-box-shadow;  
   display: block;
+  fill: $white;
+  height: $icon-size;
+  padding: 10px;
+  width: $icon-size;
+  margin: auto;
+  margin-top: .5em;
 }
 
-details li {
+.topics-nav__link {
   background-color: $blue-fill;
   border-bottom: $base-border;
-}
-
-details li:hover {
-  background-color: $dark-purple;
-}
-
-details a {
+  color: $white;
   display: block;
   padding: 1.25em;
-  color: $white;
   text-decoration: none; 
-}
 
-summary:hover {
-  cursor: pointer;
-  background-color: $yellow;
+  &:hover {
+    background-color: $dark-purple;
+  }
+
+  .topics-nav__item:last-child & {
+    border-bottom-left-radius: .7rem;
+    border-bottom-right-radius: .7rem;
+  }
 }
