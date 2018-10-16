@@ -12,9 +12,7 @@
   display: inline-flex;
   font-size: $h1-font-size;
   font-weight: $h1-font-weight;
-  margin: 0 auto;
-  padding-left: auto;
-  padding-right: auto;
+  margin: 0 auto;;
   padding: .5rem;
   width: $card-width;
   align-items: center;
@@ -26,12 +24,12 @@
   }
 
   &:hover {
-    background-color: #F0AA41;
+    background-color: $dark-purple;
     cursor: pointer;
   }
 
   .topics-nav[open] & {
-  	background-color: #F0AA41;
+  	background-color: $dark-purple;
   } 
 }
 
@@ -46,28 +44,28 @@
 }
 
 .topics-nav__icon {
-  background: #ed3e44;
+  background: $red;
   border-radius: 50%;
-  box-shadow: 0.5px 0.5px 25px 0.5px grey;  
+  box-shadow: $base-box-shadow;  
   display: block;
   fill: $white;
   height: $icon-size;
   padding: 10px;
   width: $icon-size;
   margin: auto;
-  margin-top: 10px;
+  margin-top: .5em;
 }
 
 .topics-nav__link {
-  background-color: #4C95C7;
-  border-bottom: 1px solid #65FFFF;
-  color: white;
+  background-color: $blue-fill;
+  border-bottom: $base-border;
+  color: $white;
   display: block;
   padding: 1.25em;
   text-decoration: none; 
 
   &:hover {
-    background-color: #657EA8;
+    background-color: $dark-purple;
   }
 
   .topics-nav__item:last-child & {
