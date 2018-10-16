@@ -33,8 +33,3 @@ window.onload = function() {
     })
   });
 }
-
-
-
-// document.getElementById('card-topic-header').innerText("Ralph\'s Launch Cards");
-// document.getElementById('card-prompt').innerText('Click Lauch to Change Prompt!);
