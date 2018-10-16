@@ -6,7 +6,27 @@
   border-radius: $base-border-radius;
   height: $card-height;
   margin: $base-vh-spacing auto 0;
+  transition: $base-transition;
+  position: absolute;
+  left: 50%;
+  margin-left: -$card-width / 1.77;
+  top: $base-vh-spacing - 2.25;
+
+ }
+
+.card--transform {
+  transform: rotateY(180deg);
+}
+
+.card.card--layers {
+  background-color: $red;
   box-shadow: $bkg-card-fill;
+  height: $card-height;
+  width: $card-width;
+  z-index: $behind-z-index;
+  left: 50%;
+  margin-left: -$card-width / 1.9;
+  top: $base-vh-spacing - 1;
 }
 
 .card__category {
@@ -24,10 +44,14 @@
 }
 
 p.card__prompt {
-  margin-top: 25%;
+  background-color: $blue-fill;
+  border-radius: $base-border-radius;
+  border: $base-border;
   color: $white;
   font-size: $base__font-size;
   line-height: $base-line-height;
+  margin-top: $base-vh-spacing / 3;
+  padding: 1em;
 }
 
 .card__refresh-button {
@@ -35,6 +59,7 @@ p.card__prompt {
   border-radius: $base-border-radius;
   border: $base-border;
   color: $white;
+  margin-bottom: $base-vh-spacing / 5;
   overflow: hidden;
   padding: .75rem 2rem;
   position: relative;
@@ -57,8 +82,8 @@ p.card__prompt {
     top: 0;
     transform-origin: left center;
     transform: scale(0,1);
-    transition: all 0.2s linear 0s;
-    width: 30px;
+    transition: $base-transition;
+    width: 25px;
   }
 
   &:hover {
@@ -67,13 +92,18 @@ p.card__prompt {
     cursor: pointer;
     font-weight: bolder;
     display: inline-flex;
+    padding-right: 20px;
 
     &:before {
       transform: scale(1,1);
     }
   }
 
-  &:active {
-    transform: rotateY(180deg);
-  }
 }
+
+.credits {
+  text-align: right;
+  font-weight: $light-font-weight;
+  font-size: $footer-font-size;
+}
+
