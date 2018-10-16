@@ -1,19 +1,24 @@
-$_topic-size: 2rem;
-
 .topics-nav {
-  margin-left: 2rem;
+  position: relative;
+  padding: 0;
 }
 
 .topics-nav__toggle {
-  height: $_topic-size;
-  width: $_topic-size;
-  display: flex;
+  background-color: $blue-fill;
+  border-radius: $base-border-radius;
+  border: $base-border;
+  box-sizing: border-box;
+  color: $white;
+  display: inline-flex;
+  font-size: $h1-font-size;
+  font-weight: $h1-font-weight;
+  margin: 0 auto;
+  padding-left: auto;
+  padding-right: auto;
+  padding: .5rem;
+  width: $card-width;
   align-items: center;
-  justify-content: center;
-  background: #ed3e44;
-  border-radius: 50%;
-  box-shadow: 0.5px 0.5px 25px 0.5px grey;  
-  z-index: 2;
+  z-index: $base-z-index;
 
 
   &::-webkit-details-marker {
@@ -32,20 +37,25 @@ $_topic-size: 2rem;
 
 .topics-nav__menu {
   list-style-type: none;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1%;
   position: absolute;
   left: 0;
-  right: 4%;
-  width: 26%;
-
+  right: 0;
+  margin-top: 0;
+  padding: 0;
+  z-index: $above-z-index;
 }
 
 .topics-nav__icon {
-  fill: #fff;
-  height: 1rem;
-  width: 1rem;
+  background: #ed3e44;
+  border-radius: 50%;
+  box-shadow: 0.5px 0.5px 25px 0.5px grey;  
+  display: block;
+  fill: $white;
+  height: $icon-size;
+  padding: 10px;
+  width: $icon-size;
+  margin: auto;
+  margin-top: 10px;
 }
 
 .topics-nav__link {
@@ -64,4 +74,4 @@ $_topic-size: 2rem;
     border-bottom-left-radius: .7rem;
     border-bottom-right-radius: .7rem;
   }
-
+}

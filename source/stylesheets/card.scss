@@ -2,7 +2,6 @@
   background-color: $yellow;
   width: $card-width;
   padding: 1em;
-  text-align: center;
   border-radius: $base-border-radius;
   height: $card-height;
   margin: $base-vh-spacing auto 0;
@@ -14,36 +13,25 @@
 
  }
 
-.card--transform {
-  transform: rotateY(360deg);
+.card__header {
+  justify-content: center;
+  padding-top: 0;
+  margin: 0;
 }
 
-.card__category {
-  background-color: $blue-fill;
-  border-radius: $base-border-radius;
-  border: $base-border;
-  box-sizing: border-box;
-  color: $white;
-  display: inline-flex;
-  font-size: $h1-font-size;
-  font-weight: $h1-font-weight;
-  justify-content: center;
-  margin: 0 auto;
-  padding-left: auto;
-  padding-right: auto;
-  padding: 1rem;
-  width: 100%;
+.card--transform {
+  transform: rotateY(360deg);
 }
 
 .card.card--layers {
   background-color: $red;
   box-shadow: $bkg-card-fill;
   height: $card-height;
-  width: $card-width;
-  z-index: $behind-z-index;
   left: 50%;
   margin-left: -$card-width / 1.9;
   top: $base-vh-spacing - 1;
+  width: $card-width;
+  z-index: $behind-z-index;
 }
 
 p.card__prompt {

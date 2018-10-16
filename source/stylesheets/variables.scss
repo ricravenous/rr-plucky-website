@@ -17,7 +17,7 @@ $medium-font-weight: 500;
 
 // Font Sizes
 $base__font-size: 1.05em;
-$h1-font-size: 1.6em;
+$h1-font-size: .8em;
 $title-font-size: 3.5em;
 $footer-font-size: 0.8em;
 
@@ -68,6 +68,7 @@ $bkg-second-card-fill: 10px 10px 0.5px 0.5px $secondary-red;
 // Card Size
 $card-width: $base-vh-spacing * 3;
 $card-height: $base-vh-spacing * 5;
+$icon-size: 2rem;
 
 //Transitions
 $base-transition: all 0.3s linear 0s;
