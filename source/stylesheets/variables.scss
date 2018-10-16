@@ -16,13 +16,13 @@ $normal-font-weight: 400;
 $medium-font-weight: 500;
 
 // Font Sizes
-$base__font-size: 1.2em;
+$base__font-size: 1.05em;
 $h1-font-size: 1.6em;
 $title-font-size: 3.5em;
 $footer-font-size: 0.8em;
 
 // Line height
-$base-line-height: 1.7;
+$base-line-height: 1.3;
 $heading-line-height: 1.25;
 
 // Spacing
@@ -62,15 +62,15 @@ $base-box-shadow: 0.5px 0.5px 25px 0.5px $grey;
 $base-background-color: $dark-purple;
 
 // Card Layers
-$bkg-card-fill: 10px 10px 0.5px 0.5px $red;
+$bkg-card-fill: 10px 10px 0.5px 0.5px $secondary-red;
 $bkg-second-card-fill: 10px 10px 0.5px 0.5px $secondary-red;
 
 // Card Size
 $card-width: $base-vh-spacing * 3;
-$card-height: $base-vh-spacing * 4.5;
+$card-height: $base-vh-spacing * 5;
 
 //Transitions
-$base-transition: all 0.2s linear 0s;
+$base-transition: all 0.3s linear 0s;
 
 // z-indexes
 $hidden-element-z-index: -1;

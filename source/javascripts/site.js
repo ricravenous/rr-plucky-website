@@ -26,9 +26,10 @@ window.onload = function() {
 
   //add listeners to the topic headers to change the card heading text
   document.querySelectorAll(".topic__link").forEach(function(node) {
-    node.addEventListener('click', function(){
+    node.addEventListener('click', function(card){
       topicH1.innerText = node.innerText;
       drawCard();
+      
     })
   });
 }

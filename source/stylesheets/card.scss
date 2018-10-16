@@ -6,13 +6,30 @@
   border-radius: $base-border-radius;
   height: $card-height;
   margin: $base-vh-spacing auto 0;
-  box-shadow: $bkg-card-fill;
   transition: $base-transition;
-}
+  position: absolute;
+  left: 50%;
+  margin-left: -$card-width / 1.77;
+  top: 7.75vh;
+  z-index: -100;
+ }
 
 .card--transform {
-  transform: rotateY(360deg);
+  transform: rotateY(180deg);
+}
 
+.card--layers {
+  background-color: $red;
+  border-radius: $base-border-radius;
+  box-shadow: $bkg-card-fill;
+  height: $card-height;
+  padding: 1em;
+  position: absolute;
+  width: $card-width;
+  z-index: -200;
+  left: 50%;
+  margin-left: -$card-width / 1.9;
+  top: $base-vh-spacing * 1.9;
 }
 
 .card__category {
@@ -30,10 +47,14 @@
 }
 
 p.card__prompt {
-  margin-top: 25%;
+  background-color: $blue-fill;
+  border-radius: $base-border-radius;
+  border: $base-border;
+  margin-top: $base-vh-spacing / 3;
   color: $white;
   font-size: $base__font-size;
   line-height: $base-line-height;
+  padding: 1em;
 }
 
 .card__refresh-button {
@@ -46,6 +67,7 @@ p.card__prompt {
   position: relative;
   text-decoration: none;
   transition: all 0.2s linear 0s;
+  margin-bottom: $base-vh-spacing / 5;
 
   &:before {
     align-items: center;
@@ -64,7 +86,7 @@ p.card__prompt {
     transform-origin: left center;
     transform: scale(0,1);
     transition: $base-transition;
-    width: 30px;
+    width: 25px;
   }
 
   &:hover {
@@ -73,10 +95,18 @@ p.card__prompt {
     cursor: pointer;
     font-weight: bolder;
     display: inline-flex;
+    padding-right: 20px;
 
     &:before {
       transform: scale(1,1);
     }
   }
-  
+
 }
+
+p.credits {
+  text-align: right;
+  font-weight: $light-font-weight;
+  font-size: $footer-font-size;
+}
+
