@@ -50,10 +50,10 @@ p.card__prompt {
   background-color: $blue-fill;
   border-radius: $base-border-radius;
   border: $base-border;
-  margin-top: $base-vh-spacing / 3;
   color: $white;
   font-size: $base__font-size;
   line-height: $base-line-height;
+  margin-top: $base-vh-spacing / 3;
   padding: 1em;
 }
 
@@ -62,12 +62,12 @@ p.card__prompt {
   border-radius: $base-border-radius;
   border: $base-border;
   color: $white;
+  margin-bottom: $base-vh-spacing / 5;
   overflow: hidden;
   padding: .75rem 2rem;
   position: relative;
   text-decoration: none;
   transition: all 0.2s linear 0s;
-  margin-bottom: $base-vh-spacing / 5;
 
   &:before {
     align-items: center;
