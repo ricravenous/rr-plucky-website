@@ -6,6 +6,7 @@ activate :autoprefixer do |prefix|
 end
 
 set :css_dir, "stylesheets"
+set :fonts_dir, "fonts"
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/

@@ -41,9 +41,7 @@
 
 .topics-nav__menu {
   list-style-type: none;
-  position: absolute;
-  left: 0;
-  right: 0;
+  @include position(absolute, null 0);
   margin-top: 0;
   padding: 0;
   z-index: $above-z-index;
