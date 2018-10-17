@@ -41,7 +41,6 @@ p.card__prompt {
   border-radius: $base-border-radius;
   border: $base-border;
   color: $white;
-
   font-size: $base__font-size;
   line-height: $base-line-height;
   margin-top: $base-vh-spacing / 3;
@@ -98,8 +97,4 @@ p.card__prompt {
   text-align: right;
   font-weight: $light-font-weight;
   font-size: $footer-font-size;
-}
-
-summary::-webkit-details-marker {
-    display: none;
 }
