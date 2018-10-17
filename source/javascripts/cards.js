@@ -1,14 +1,34 @@
 cards = [
 {
   prompt: "How do we become more productive?",
-  topic: "productivity",
+  topic: "Productivity",
+},
+{
+  prompt: "This is another card of productivity.",
+  topic: "Productivity",
+},
+{
+  prompt: "This is another card of productivity.",
+  topic: "Productivity",
 },
 {
   prompt: "Name 3 morning activities.",
-  topic: "management",
+  topic: "Management",
+},
+{
+  prompt: "Manage moose.",
+  topic: "Management",
 },
 {
   prompt: "Name a favorite restaurant.",
-  topic: "food",
+  topic: "Food",
+},
+{
+  prompt: "What is your favorite pizza topping?",
+  topic: "Food",
+},
+{
+  prompt: "What is your favorite pizza topping?",
+  topic: "Food",
 },
 ];

@@ -9,12 +9,13 @@
   border: $base-border;
   box-sizing: border-box;
   color: $white;
-  display: inline-flex;
+  // display: flex;
   font-size: $h1-font-size;
   font-weight: $h1-font-weight;
+  // flex-direction: column;
   margin: 0 auto;;
   padding: .5rem;
-  transition: all 0.2s linear 0s;
+  transition: background-color 0.2s linear 0s;
   width: $card-width;
   align-items: center;
   z-index: $base-z-index;
@@ -23,6 +24,8 @@
   &::-webkit-details-marker {
     display: none;
   }
+  
+  &::-moz-list-bullet { list-style-type: none; }
 
   &:hover {
     background-color: $dark-purple;
@@ -31,6 +34,8 @@
 
   .topics-nav[open] & {
   	background-color: $dark-purple;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   } 
 }
 
@@ -74,3 +79,4 @@
     border-bottom-right-radius: .7rem;
   }
 }
+
