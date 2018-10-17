@@ -1,35 +1,58 @@
 // This is where it all goes :)
 
 var cardIndex = 0;
+var currentTopic = undefined;
 
 window.onload = function() {
-  var topicH1 = document.getElementById("card-topic-header");
+  var topicH1 = document.getElementById("card-title-header");
+  var topicDetails = document.getElementById("topics");
 
   var refreshButton = document.getElementById("refresh-button");
   var cardPrompt = document.getElementById("card-prompt");
   var card = document.getElementById("card");
-  
-  function drawCard() {
-    cardIndex = (cardIndex + 1) % cards.length;
+  var cardBack = document.getElementById("card--back");
+
+  function drawCard(topic) {
+
+    if (topic) {
+      for(var i = 0; i < cards.length; i++){
+        cardIndex = (cardIndex + 7) % cards.length;
+        if (cards[cardIndex].topic == topic) {
+          break;
+        }
+      }
+    } else {
+      cardIndex = (cardIndex + 7) % cards.length;
+    }
+
     cardPrompt.innerHTML = cards[cardIndex].prompt;
-
-    card.classList.add('card--transform');
-
-  setTimeout(
-    function(){
-      card.classList.remove('card--transform'); }, 200
-    );
+    topicH1.innerHTML = cards[cardIndex].topic;
     
+    card.classList.add('card--transform');
+    cardBack.classList.add('cardBack--transform');
+
+    setTimeout(
+      function(){
+        card.classList.remove('card--transform'),
+        cardBack.classList.remove('cardBack--transform')
+      }, 200
+    );
   }
 
-  refreshButton.onclick = drawCard;
+  refreshButton.onclick = function(){
+    if (currentTopic){
+      drawCard(currentTopic);
+    } else {
+      drawCard();
+    }
+  }
 
   //add listeners to the topic headers to change the card heading text
-  document.querySelectorAll(".topic__link").forEach(function(node) {
+  document.querySelectorAll(".topics-nav__item").forEach(function(node) {
     node.addEventListener('click', function(card){
-      topicH1.innerText = node.innerText;
-      drawCard();
-      
+      currentTopic = node.innerText;
+      drawCard(currentTopic);
+      topicDetails.removeAttribute("open")
     })
   });
 }

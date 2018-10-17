@@ -1,0 +1,7 @@
+.card.card--back {
+}
+
+.card--back{
+  z-index: $behind-z-index;
+  transform: rotateY(90deg);
+}

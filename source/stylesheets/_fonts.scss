@@ -1,0 +1,53 @@
+@include font-face("Calibre", "../fonts/CalibreWeb-Light") {
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+};
+
+@include font-face("Calibre", "../fonts/CalibreWeb-LightItalic") {
+  font-display: swap;
+  font-style: italic;
+  font-weight: 300;
+};
+
+@include font-face("Calibre", "../fonts/CalibreWeb-Regular") {
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+};
+
+@include font-face("Calibre", "../fonts/CalibreWeb-RegularItalic") {
+  font-display: swap;
+  font-style: italic;
+  font-weight: 400;
+};
+
+@include font-face("Calibre", "../fonts/CalibreWeb-Medium") {
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+};
+
+@include font-face("Calibre", "../fonts/CalibreWeb-MediumItalic") {
+  font-display: swap;
+  font-style: italic;
+  font-weight: 500;
+};
+
+@include font-face("Calibre", "../fonts/CalibreWeb-Bold") {
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+};
+
+@include font-face("Calibre", "../fonts/CalibreWeb-BoldItalic") {
+  font-display: swap;
+  font-style: italic;
+  font-weight: 700;
+};
+
+@include font-face("Tiempos", "../fonts/TiemposTextWeb-RegularItalic") {
+  font-display: swap;
+  font-style: italic;
+  font-weight: normal;
+};

@@ -10,13 +10,15 @@
   left: 50%;
   margin-left: -$card-width / 1.77;
   top: $base-vh-spacing - 2.25;
-
+  z-index: $above-z-index;
  }
 
 .card__header {
   justify-content: center;
   padding-top: 0;
   margin: 0 auto;
+  align-items: center;
+
 }
 
 .card--transform {
@@ -31,11 +33,11 @@
   margin-left: -$card-width / 1.9;
   top: $base-vh-spacing - 1;
   width: $card-width;
-  z-index: $behind-z-index;
+  z-index: $hidden-element-z-index;
 }
 
 p.card__prompt {
-  background-color: $blue-fill;
+  background-color: $dark-purple;
   border-radius: $base-border-radius;
   border: $base-border;
   color: $white;
@@ -96,4 +98,3 @@ p.card__prompt {
   font-weight: $light-font-weight;
   font-size: $footer-font-size;
 }
-

@@ -1,10 +1,13 @@
 //this is where we import all our sass partials
 
 //vendor setup
-@import 'normalize';
 
+@import 'normalize';
+@import 'bourbon';
+@import 'fonts';
 @import 'variables';
 @import 'typography';
 @import 'base';
 @import 'card';
+@import 'card-back.scss';
 @import 'header';
