@@ -11,11 +11,11 @@
     -ms-filter: "FlipH";
     padding-top: $card-width / 1.5;
   }
-
 }
 
 .cardBack--transform {
-  background-color: $red;
+  background-color: darken( $red, 5% );
+  box-shadow: $card-back-box-shadow;
   backface-visibility: visible;
   transform: rotateY(180deg);
 }

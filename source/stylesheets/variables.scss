@@ -55,8 +55,11 @@ $hover-color: $dark-purple;
 // Borders & Shadows
 $base-border-color: #65FFFF;
 $base-border: 1px solid $base-border-color;
+$base-border-size: 1px solid;
 $base-border-radius: 20px;
 $base-box-shadow: 0.5px 0.5px 25px 0.5px $grey;  
+$base-card-box-shadow: 3px 2px 2px 0.2px $black;
+$card-back-box-shadow: -3px 2px 2px 0.2px $black;
 
 // Background Colors
 $base-background-color: $dark-purple;

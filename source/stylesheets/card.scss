@@ -1,10 +1,11 @@
-.container {
-    perspective: 1000px;
+.card__container {
+  perspective: 1000px;
 }
 
 .card {
   backface-visibility: hidden;
   background-color: $yellow;
+  box-shadow: $base-card-box-shadow;
   width: $card-width;
   padding: 1em;
   border-radius: $base-border-radius;
@@ -98,7 +99,9 @@ p.card__prompt {
 }
 
 .credits {
+  border-top: $base-border-size $red;
   text-align: right;
   font-weight: $light-font-weight;
   font-size: $footer-font-size;
+  padding-top: 2vh;
 }
