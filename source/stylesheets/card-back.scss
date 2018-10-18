@@ -1,4 +1,5 @@
 .card--back{
+  backface-visibility: visible;
   z-index: $base-z-index;
   color: $white;
 
@@ -16,6 +17,5 @@
 .cardBack--transform {
   background-color: darken( $red, 5% );
   box-shadow: $card-back-box-shadow;
-  backface-visibility: visible;
   transform: rotateY(180deg);
 }

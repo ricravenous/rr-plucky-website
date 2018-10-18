@@ -35,7 +35,7 @@ window.onload = function() {
       function(){
         card.classList.remove('card--transform'),
         cardBack.classList.remove('cardBack--transform')
-      }, 500
+      }, 450
     );
   }
 
