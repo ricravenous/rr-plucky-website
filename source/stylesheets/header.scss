@@ -14,7 +14,7 @@
   font-weight: $h1-font-weight;
   margin: 0 auto;;
   padding: .5rem;
-  transition: background-color 0.2s linear 0s;
+  transition: $base-transition-bkg-color;
   width: $card-width;
   z-index: $base-z-index;
 
@@ -30,12 +30,19 @@
   &:hover {
     background-color: $dark-purple;
     cursor: pointer;
+    
+    .topics-nav__icon {
+      background-color: $yellow;
+      transition: $base-transition-bkg-color;
+    }
+
   }
 
   .topics-nav[open] & {
   	background-color: $dark-purple;
     @include border-bottom-radius(0);
-  } 
+  }
+
 }
 
 .topics-nav__menu {

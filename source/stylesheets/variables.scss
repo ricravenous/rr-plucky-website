@@ -9,11 +9,11 @@ $monospace-font-stack: "Consolas", "Courier New", "Monaco", monospace;
 $base-font-family: "Calibre", $monospace-font-stack;
 
 // Font Weights
-$h1-font-weight: 600;
 $base-font-weight: 400;
+$h1-font-weight: 600;
 $light-font-weight: 300;
-$normal-font-weight: 400;
 $medium-font-weight: 500;
+$normal-font-weight: 400;
 
 // Font Sizes
 $base__font-size: 1.05em;
@@ -72,10 +72,11 @@ $icon-size: 2rem;
 
 //Transitions
 $base-transition: all 0.3s linear 0s;
-$base-card-perspective: 1000px;
+$base-transition-bkg-color: background-color 0.2s linear 0s;
+
 
 // z-indexes
 $hidden-element-z-index: -2;
 $behind-z-index: -1;
 $base-z-index: 0;
-$above-z-index: 1;
+$above-z-index: 2;
