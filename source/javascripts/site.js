@@ -25,8 +25,12 @@ window.onload = function() {
       cardIndex = (cardIndex + 7) % cards.length;
     }
 
+    setTimeout(
+      function(){
     cardPrompt.innerHTML = cards[cardIndex].prompt;
-    topicH1.innerHTML = cards[cardIndex].topic;
+    topicH1.innerHTML = cards[cardIndex].topic; 
+      }, 500
+    );
     
     card.classList.add('card--transform');
     cardBack.classList.add('cardBack--transform');
@@ -35,9 +39,10 @@ window.onload = function() {
       function(){
         card.classList.remove('card--transform'),
         cardBack.classList.remove('cardBack--transform')
-      }, 450
+      }, 500
     );
   }
+
 
   refreshButton.onclick = function(){
     if (currentTopic){
